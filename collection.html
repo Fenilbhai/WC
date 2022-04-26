@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>collection</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="lightbox.min.css">
+
+	<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+	<link rel="stylesheet" href="download.css">
+</head>
+
+<body>
+	<section class="header">
+		<nav>
+			<div class="nav-links" id="navLinks">
+				<ul>
+					<b>
+						<li><a href="Homepage.html">Home</a></li>
+					</b>
+					<b>
+						<li><a href="category.html">Category</a></li>
+					</b>
+					<b>
+						<li><a href="collection.html">Collection</a></li>
+					</b>
+					<b>
+						<li><a href="Edit.html">Edit</a></li>
+					</b>
+					<b>
+						<li><a href="about.html">About</a></li>
+					</b>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<input type="radio" name="radio-btn" id="radio5">
+
+
+				<div class="slide first">
+					<img src="images/gallery/13.jpg">
+				</div>
+
+				<div class="slide">
+					<img src="images/gallery/7.jpg">
+				</div>
+
+				<div class="slide">
+					<img src="images/gallery/8.jpg">
+				</div>
+
+				<div class="slide">
+					<img src="images/gallery/9.jpg">
+				</div>
+
+				<div class="slide">
+					<img src="images/gallery/10.jpg">
+				</div>
+
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+				</div>
+
+			</div>
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+				<label for="radio5" class="manual-btn"></label>
+			</div>
+
+		</div>
+
+	</section>
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function () {
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if (counter > 5) {
+				counter = 1;
+			}
+		}, 5000);
+	</script>
+	<section class="s4">
+
+		<div class="gallery2">
+
+			<a href="images/gallery/9.jpg" data-lightbox="mygallery"><img src="images/gallery/9s.jpg"></a>
+			<a href="images/gallery/11.jpg" data-lightbox="mygallery"><img src="images/gallery/11s.jpg"></a>
+			<a href="images/gallery/8.jpg" data-lightbox="mygallery"><img src="images/gallery/8s.jpg"></a>
+
+			<div class="bw1">
+				<ul>
+					<li><button class="download-btn"><a href="images/gallery/9.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/11.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/8.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+				</ul>
+			</div>
+
+			<a href="images/gallery/14.jpg" data-lightbox="mygallery"><img src="images/gallery/14s.jpg"></a>
+			<a href="images/gallery/15.jpg" data-lightbox="mygallery"><img src="images/gallery/15s.jpg"></a>
+			<a href="images/gallery/17.jpg" data-lightbox="mygallery"><img src="images/gallery/17s.jpg"></a>
+			<div class="bw1">
+				<ul>
+					<li><button class="download-btn"><a href="images/gallery/14.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/15.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/17.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+				</ul>
+			</div>
+
+			<a href="images/gallery/c2.jpg" data-lightbox="mygallery"><img src="images/gallery/c2s.jpg"></a>
+			<a href="images/gallery/c3.jpg" data-lightbox="mygallery"><img src="images/gallery/c3s.jpg"></a>
+			<a href="images/gallery/c5.jpg" data-lightbox="mygallery"><img src="images/gallery/c5s.jpg"></a>
+			<div class="bw1">
+				<ul>
+					<li><button class="download-btn"><a href="images/gallery/c2.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/c3.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+					<li><button class="download-btn"><a href="images/gallery/c5.jpg" download>Download<i
+									class="fa fa-download"></i></a></button></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</section>
+</body>
+
+</html>

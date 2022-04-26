@@ -1,0 +1,23 @@
+.bw1 .download-btn{
+    background-color: #00B050;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+}
+
+.download-btn:hover {
+    background-color: RoyalBlue;
+  }
+
+
+ul li{
+	display: inline-block;
+	list-style: none;
+    margin: 0px 112.5px;
+    margin-top: -1%;
+    margin-bottom: 5%;
+}
